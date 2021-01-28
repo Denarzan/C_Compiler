@@ -1,0 +1,23 @@
+int geom_progression(int ak, int q, int n){
+    for (int i = 0; i < n; i++)
+    {
+        ak = ak*q;
+    }
+    return ak;
+}
+
+int sum_geom_progression(int ak, int q, int n){
+    int sum = ak;
+    for (int i = 0; i < n; i++)
+    {
+        ak = ak*q;
+        sum = sum + ak;
+    }
+    return sum;
+}
+
+
+int main(){
+    int a = sum_geom_progression(2, 2, 2);
+    return a;
+} 
